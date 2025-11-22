@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EchoForge</title>
+  <link rel="stylesheet" href="echoforge.css" />
+</head>
+<body>
+  <header class="ef-header">
+    <div class="ef-brand">
+      <h1 id="siteTitle">EchoForge</h1>
+      <p id="siteTagline">Forge echoes of ideas.</p>
+    </div>
+    <nav class="ef-nav">
+      <button id="themeToggle">Toggle Theme</button>
+    </nav>
+  </header>
+
+  <main class="ef-main">
+    <section class="ef-hero">
+      <h2>Welcome to EchoForge</h2>
+      <p id="heroText">Loading configuration…</p>
+      <div class="ef-actions">
+        <button id="sampleAction">Create Echo</button>
+      </div>
+    </section>
+
+    <section class="ef-console" aria-live="polite">
+      <h3>Console</h3>
+      <div id="log" class="ef-log">Ready.</div>
+    </section>
+  </main>
+
+  <footer class="ef-footer">
+    <small id="footerText">© EchoForge</small>
+  </footer>
+
+  <script src="echoforge.js"></script>
+</body>
+</html>
