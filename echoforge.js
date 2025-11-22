@@ -6,7 +6,7 @@
   // load config.json
   let config = { title: "EchoForge", tagline: "Forge echoes of ideas.", hero: "Start building." };
   try {
-    const resp = await fetch('config.json');
+    const resp = await fetch('./config.json');
     if (resp.ok) config = await resp.json();
     else log('config.json not found — using defaults.');
   } catch (e) {
