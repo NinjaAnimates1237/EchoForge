@@ -1,0 +1,32 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#6ee7b7;
+  --text:#e6eef6;
+  --radius:12px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;background:linear-gradient(180deg,var(--bg),#071020);color:var(--text)}
+.ef-header{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;background:transparent}
+.ef-brand h1{margin:0;font-size:1.3rem;letter-spacing:0.6px}
+.ef-brand p{margin:0;font-size:0.85rem;color:var(--muted)}
+.ef-nav button{padding:8px 12px;border-radius:10px;border:none;background:rgba(255,255,255,0.06);color:var(--text);cursor:pointer}
+.ef-main{max-width:980px;margin:28px auto;padding:18px}
+.ef-hero{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:20px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+.ef-hero h2{margin:0 0 6px 0}
+.ef-actions{margin-top:12px}
+.ef-actions button{padding:10px 14px;border-radius:10px;border:none;background:var(--accent);color:#04201a;font-weight:600;cursor:pointer}
+.ef-console{margin-top:18px;padding:14px;border-radius:12px;background:var(--card);color:var(--muted)}
+.ef-log{min-height:64px;padding:10px;border-radius:8px;background:rgba(255,255,255,0.02);color:var(--muted);font-family:monospace;font-size:0.9rem}
+.ef-footer{text-align:center;color:var(--muted);padding:14px 8px;font-size:0.85rem}
+
+/* light theme helper */
+.light-theme{
+  --bg:#f5f8fb;
+  --card:#ffffff;
+  --muted:#5b6b7a;
+  --accent:#0077cc;
+  --text:#092033;
+}
