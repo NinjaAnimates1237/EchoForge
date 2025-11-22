@@ -1,0 +1,10 @@
+{
+  "title": "EchoForge",
+  "tagline": "Forge echoes of ideas.",
+  "hero": "Prototype fast — ship faster.",
+  "theme": "dark",
+  "contact": {
+    "email": "hello@echoforge.example",
+    "twitter": "@echoforge"
+  }
+}
