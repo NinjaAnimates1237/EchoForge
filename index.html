@@ -1,39 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EchoForge</title>
-  <link rel="stylesheet" href="echoforge.css" />
+  <link rel="stylesheet" href="echoforge.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
   <header class="ef-header">
     <div class="ef-brand">
-      <h1 id="siteTitle">EchoForge</h1>
-      <p id="siteTagline">Forge echoes of ideas.</p>
+      <h1>EchoForge</h1>
+      <p>Forge echoes of ideas.</p>
     </div>
-    <nav class="ef-nav">
-      <button id="themeToggle">Toggle Theme</button>
-    </nav>
+    <button id="themeToggle">Toggle Theme</button>
   </header>
 
   <main class="ef-main">
-    <section class="ef-hero">
-      <h2>Welcome to EchoForge</h2>
-      <p id="heroText">Loading configuration…</p>
-      <div class="ef-actions">
-        <button id="sampleAction">Create Echo</button>
-      </div>
+    <!-- Authentication -->
+    <section id="authSection">
+      <h2>Login or Signup</h2>
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Password">
+      <button id="signupBtn">Signup</button>
+      <button id="loginBtn">Login</button>
     </section>
 
-    <section class="ef-console" aria-live="polite">
-      <h3>Console</h3>
-      <div id="log" class="ef-log">Ready.</div>
+    <!-- Servers -->
+    <section id="serversSection" class="hidden">
+      <h2>Servers</h2>
+      <input type="text" id="newServerName" placeholder="New server name">
+      <button id="createServerBtn">Create Server</button>
+      <ul id="serversList"></ul>
+    </section>
+
+    <!-- Chat -->
+    <section id="chatSection" class="hidden">
+      <h2 id="currentServerName">Server</h2>
+      <div id="chatConsole" class="ef-log"></div>
+      <input type="text" id="messageInput" placeholder="Type a message">
+      <button id="sendMessageBtn">Send</button>
     </section>
   </main>
 
   <footer class="ef-footer">
-    <small id="footerText">© EchoForge</small>
+    <small>© EchoForge</small>
   </footer>
 
   <script src="echoforge.js"></script>
